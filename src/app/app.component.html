@@ -1,0 +1,33 @@
+<div class="container-sm p-5 ml-5">
+  <div class="card song-player-top margin-auto">
+    <img src="../assets/waves.gif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Click On Play To Continue</h5>
+      <div>
+        <audio controls id="audio-file" (timeupdate)="myFunction($event)">
+          <source src="horse.ogg" type="audio/ogg">
+          <source src="../assets/Afreen.mp3" type="audio/mpeg" >
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <!-- <button type="button" class="btn btn-secondary">
+        <i class="bi bi-file-play"></i>
+      </button>
+      <button type="button" class="btn btn-secondary margin-left-10">
+        <i class="bi bi-stop-circle"></i>
+      </button>
+      <button type="button" class="btn btn-secondary margin-left-10">
+        <i class="bi bi-repeat"></i>
+      </button> -->
+    </div>
+    <div>
+      <div class="alert alert-primary" role="alert">
+        {{lyrics}}
+      </div>
+
+    </div>
+  </div>
+</div>
